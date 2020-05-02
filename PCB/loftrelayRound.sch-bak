@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:loftrelayRound-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -573,7 +572,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 1150 5150 1150
 $Comp
-L Converter_ACDC:IRM-02-5 PS1
+L loftrelayRound-rescue:IRM-02-5-Converter_ACDC PS1
 U 1 1 5E33B388
 P 3650 2600
 F 0 "PS1" H 3650 2925 50  0000 C CNN

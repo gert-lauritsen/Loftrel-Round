@@ -320,7 +320,7 @@ F 3 "" H 9900 2900 50  0001 C CNN
 	1    9900 2900
 	1    0    0    -1  
 $EndComp
-Text Label 5200 3250 0    50   ~ 0
+Text Label 4600 3250 0    50   ~ 0
 Opto
 Text Label 7000 3250 0    50   ~ 0
 Opto
@@ -474,62 +474,31 @@ F 3 "https://www.omron.com/ecb/products/pdf/en-g5q.pdf" H 4400 3550 50  0001 C C
 $EndComp
 Wire Wire Line
 	4350 3450 4350 3500
-Wire Wire Line
-	4350 3250 4450 3250
 Connection ~ 4350 3250
-Wire Wire Line
-	5100 3250 5150 3250
-$Comp
-L Device:R_Small R8
-U 1 1 5E3364CD
-P 5150 3350
-F 0 "R8" H 5091 3304 50  0000 R CNN
-F 1 "10k" H 5091 3395 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 5150 3350 50  0001 C CNN
-F 3 "~" H 5150 3350 50  0001 C CNN
-	1    5150 3350
-	-1   0    0    1   
-$EndComp
-Connection ~ 5150 3250
-Wire Wire Line
-	5150 3250 5400 3250
 $Comp
 L Device:C_Small C5
 U 1 1 5E3365B0
-P 5400 3350
-F 0 "C5" H 5492 3396 50  0000 L CNN
-F 1 "100nF" H 5492 3305 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5400 3350 50  0001 C CNN
-F 3 "~" H 5400 3350 50  0001 C CNN
-	1    5400 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDD #PWR0101
-U 1 1 5E336684
-P 5150 3500
-F 0 "#PWR0101" H 5150 3250 50  0001 C CNN
-F 1 "GNDD" H 5154 3345 50  0000 C CNN
-F 2 "" H 5150 3500 50  0001 C CNN
-F 3 "" H 5150 3500 50  0001 C CNN
-	1    5150 3500
+P 4800 3350
+F 0 "C5" H 4892 3396 50  0000 L CNN
+F 1 "1uF" H 4892 3305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4800 3350 50  0001 C CNN
+F 3 "~" H 4800 3350 50  0001 C CNN
+	1    4800 3350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDD #PWR0102
 U 1 1 5E3366C3
-P 5400 3500
-F 0 "#PWR0102" H 5400 3250 50  0001 C CNN
-F 1 "GNDD" H 5404 3345 50  0000 C CNN
-F 2 "" H 5400 3500 50  0001 C CNN
-F 3 "" H 5400 3500 50  0001 C CNN
-	1    5400 3500
+P 4800 3500
+F 0 "#PWR0102" H 4800 3250 50  0001 C CNN
+F 1 "GNDD" H 4804 3345 50  0000 C CNN
+F 2 "" H 4800 3500 50  0001 C CNN
+F 3 "" H 4800 3500 50  0001 C CNN
+	1    4800 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 3450 5400 3500
-Wire Wire Line
-	5150 3450 5150 3500
+	4800 3450 4800 3500
 $Comp
 L power:+5V #PWR0118
 U 1 1 5E33965D
@@ -678,28 +647,10 @@ Wire Wire Line
 Wire Wire Line
 	4100 4150 3500 4150
 Connection ~ 3500 4150
-$Comp
-L Diode:BAT54A D3
-U 1 1 5E35A014
-P 4800 3250
-F 0 "D3" H 4800 3382 50  0000 C CNN
-F 1 "BAT54A" H 4800 3473 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4875 3375 50  0001 L CNN
-F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 4680 3250 50  0001 C CNN
-	1    4800 3250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4350 3050 4400 3050
 Wire Wire Line
 	4400 3050 4400 3000
-Wire Wire Line
-	4450 3250 4450 3050
-Wire Wire Line
-	4450 3050 4800 3050
-Connection ~ 4450 3250
-Wire Wire Line
-	4450 3250 4500 3250
 Wire Wire Line
 	3800 4350 7100 4350
 Wire Wire Line
@@ -819,4 +770,6 @@ Wire Wire Line
 Connection ~ 7950 3450
 Wire Wire Line
 	7950 3450 8600 3450
+Wire Wire Line
+	4350 3250 4800 3250
 $EndSCHEMATC
