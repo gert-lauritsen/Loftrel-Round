@@ -362,6 +362,9 @@ Main KiCad files:
 | `loftrelayRound.kicad_pcb` | PCB layout |
 | `loftrelayRound.pdf` | Schematic PDF export |
 
+Open [Schematic](./PCB/loftrelayRound.pdf) in pdf format
+
+
 ### Opening the PCB project
 
 1. Install KiCad.
