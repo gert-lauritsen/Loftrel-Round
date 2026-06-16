@@ -6,6 +6,8 @@ Round ceiling-mounted relay module with ESP8266/Home Assistant integration, AC s
 >
 > This project is intended for work around 230 VAC mains wiring. Only build, test, or install it if you are qualified to work on mains-powered equipment and understand local electrical regulations. Always isolate power before touching the circuit. Use correct fusing, creepage, clearance, strain relief, enclosure material, and certified installation practices. The repository files are design files and do not by themselves make the product certified for permanent installation.
 
+![c085126eb125123f909ace9ab81987df.png](./Image/c085126eb125123f909ace9ab81987df.png)
+
 ---
 
 ## Project purpose
@@ -57,10 +59,6 @@ Loftrel-Round/
 - AC/switch sense input through:
   - analog ADC level on A0
   - digital state on GPIO5
-- Configurable analog hysteresis:
-  - default LOW threshold: `1.3 V`
-  - default HIGH threshold: `1.6 V`
-  - default hysteresis: `0.3 V`
 - Status LED on GPIO2.
 - MQTT availability topic.
 - Separate MQTT event topic for toggle/state-change handling.
@@ -178,24 +176,6 @@ const uint8_t PIN_LED        = 2;   // GPIO2
 const uint8_t PIN_RELAY      = 15;  // GPIO15
 ```
 
-### Analog hysteresis logic
-
-The analog state changes only when the ADC voltage crosses the hysteresis limits:
-
-```text
-OFF → ON   when ADC voltage >= HIGH_THRESHOLD_V
-ON  → OFF  when ADC voltage <= LOW_THRESHOLD_V
-```
-
-This prevents relay/sense chatter around the threshold.
-
-Default values:
-
-```text
-LOW_THRESHOLD_V  = 1.3 V
-HIGH_THRESHOLD_V = 1.6 V
-Hysteresis       = 0.3 V
-```
 
 ### MQTT topic layout
 
@@ -341,6 +321,8 @@ PCB/Simulation/ZeroDetect.asc
 - The digital sense level is compatible with ESP8266 3.3 V logic.
 - The waveform does not contain excessive ripple that would cause false toggles.
 - The low-voltage side remains isolated or otherwise protected according to the actual hardware design.
+- 
+![514e6251451879e010414d5cbfc3dd2e.png](./Image/514e6251451879e010414d5cbfc3dd2e.png)
 
 ---
 

@@ -36,7 +36,7 @@ IPAddress gateway(GATEWAY_IP);
 IPAddress subnet(SUBNET_MASK);
 
 // Device name
-const char* DEVICE_ID   = "acmonitorha_01";
+const char* DEVICE_ID   = "acmonitorha_02";
 const char* DEVICE_NAME = "ACMonitorHA";
 
 // Pins
