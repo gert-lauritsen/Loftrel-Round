@@ -8,6 +8,13 @@ Round ceiling-mounted relay module with ESP8266/Home Assistant integration, AC s
 
 ![c085126eb125123f909ace9ab81987df.png](./Image/c085126eb125123f909ace9ab81987df.png)
 
+# Mini Version
+![c13c0e02bef6398d591dd63c50eaa66d.png](./Image/c13c0e02bef6398d591dd63c50eaa66d.png)
+
+![52bfae37191c896db9a15ee486741920.png](./52bfae37191c896db9a15ee486741920.png)
+
+Mini version is for buildin. It does the same, just in a smaller version.
+
 ---
 
 ## Project purpose
